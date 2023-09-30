@@ -1,0 +1,112 @@
+body{
+    background-image: url(./images/waves-design/contact-wave.png);
+
+}
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+#form_contact{
+    margin: auto;
+    margin-bottom: -70px;
+    margin-top: 100px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40 px;
+    font-weight: bold;
+}
+.form{
+    /* border: 3px solid yellowgreen; */
+    height: 300px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(218, 11, 70);
+    /* border: 2px solid blue; */
+    margin-top: 60px;
+    max-height: 800px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+.userinfo{
+    margin-top: 100px;
+    flex-wrap: wrap;
+    /* border: 2px solid blue;  */
+    display: flex;
+    justify-content: flex-start;
+    max-width: 640px;
+    font-size:  18px;
+    border-radius: 4px;
+    
+
+}
+.row1{
+    /* border: 2px solid rgb(0, 255, 128); */
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    margin-bottom: 20px;
+}
+.row2{
+    /* border: 2px solid rgb(0, 255, 128); */
+    display: flex;
+    gap: 75px;
+    margin-bottom: 20px;
+}
+
+
+
+.row3{
+    /* border: 2px solid rgb(0, 255, 128); */
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-bottom: 20px;
+
+}
+.row4{
+    /* border: 2px solid rgb(0, 255, 128); */
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+input ,textarea{
+    padding: 20px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: rgb(233, 230, 230);
+    
+    
+}
+.footer{
+    color: white;
+}
+.footer a{
+    color: rgb(255, 255, 255);
+}
+
+/*==========Navigation bar------------------*/
+.trans-bg{
+    background-color:red;
+}
+#button_form{
+    margin-top: 30px;
+   
+
+}
+#email_form, #message_form{
+    width: 600px ;
+}
+#small_form_area{
+    width: 270px ;
+}
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <nav>
+      <!--store name in nav_bar-->
+      <h1><a href="./index.html" id="store_name">Headaway Stationary.</a></h1>
+      <!--list of tabs in nav_bar-->
+      <ol>
+        <li><a href="./shop_page.html">Shop</a></li>
+        <li><a href="./new.html">News</a></li>
+        <li><a href="./contact.html" id="visited_link">Contact Us</a></li>
+      </ol>
+      <!--icons in nav_bar-->
+      <div class="nav_icons">
+        <a href=""><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+        <a href=""><i class="fa-solid fa-user fa-xl"></i></a>
+      </div>
+    </nav>
+    <!--FORM SECTION-->
+    <main id="main_contactPage">
+      <h1 id="form_contact">Contact Us</h1>
+      <div class="error_message"></div>
+      <form action="" id="myform" onsubmit="return validInfo()">
+        <div class="userinfo">
+          <div class="row1">
+            <input
+              type="text"
+              placeholder="Enter first name"
+              required
+              id="top_input_form"
+              id="firstName"
+            />
+
+            <input
+              type="text"
+              placeholder="Enter second name"
+              required
+              id="small_form_area"
+              id="secondName"
+            />
+          </div>
+
+          <div class="row2">
+            <input
+              type="number"
+              placeholder="+20"
+              required
+              id="top_input_form"
+              id="phoneNo"
+            />
+
+            <input
+              type="text"
+              placeholder="Enter Branch name"
+              required
+              id="small_form_area"
+              id="branchName"
+            />
+          </div>
+
+          <div class="row3">
+            <input
+              type="text"
+              placeholder="Email.."
+              required
+              id="email_form"
+              id="email"
+            />
+          </div>
+
+          <div class="row4">
+            <textarea
+              name="message"
+              id="message_form"
+              cols="30"
+              rows="10"
+              placeholder="Leave a message here.."
+            ></textarea>
+          </div>
+        </div>
+        <!-- <button id="button_form" ><a href="#" > Submit</a></button> -->
+        <div class="btn">
+          <input type="submit" />
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer footer_contactPage">
+      <div class="section section_1_footer">
+        <h4>Contact us</h4>
+        <h4>Call us</h4>
+        <h3>+201021315711</h3>
+        <p>
+          Cairo, Egypt <br />
+          <br />orders@namestationery.com
+        </p>
+      </div>
+      <div class="section section_2_footer">
+        <h3>About Store</h3>
+        <p>
+          This Stationery store was founded in 2004 with the aim of being a
+          market leader in high quality products.
+        </p>
+      </div>
+      <div class="section section_3_footer">
+        <h4>Visit Our stores</h4>
+        <a> Maadi</a>
+        <br />
+        <a> Tagmo3</a>
+        <br />
+        <a> Helipolis</a>
+        <br />
+        <a> Mall of Arabia</a>
+      </div>
+      <div class="section section_4_footer">
+        <h4>Phone Num.</h4>
+        <p>2511041</p>
+        <p>24191014</p>
+        <p>24191014</p>
+        <p>2511041</p>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
