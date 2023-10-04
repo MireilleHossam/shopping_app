@@ -7,7 +7,9 @@ function validInfo(){
     var message_form= document.getElementById("message_form").value;
     var error_message= document.getElementById("error_message");
 
-    error_message.style.padding ="10px";
+    const emailRegex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/, "gm");
+
+    error_message.style.padding = "10px";
     var text;
     if(firstName.length < 3){
         text= "Please Enter valid First Name";
@@ -37,93 +39,95 @@ function validInfo(){
 
 }
 
+
+
 /* SLIDER ANIMATED*/
-let index = 0;
-displayImages();
-function displayImages() {
-  let i;
-  const images = document.getElementsByClassName("image");
-  for (i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
-  }
-  index++;
-  if (index > images.length) {
-    index = 1;
-  }
-  images[index-1].style.display = "block";
-  setTimeout(displayImages, 2000); 
-}
+// let index = 0;
+// displayImages();
+// function displayImages() {
+//   let i;
+//   const images = document.getElementsByClassName("image");
+//   for (i = 0; i < images.length; i++) {
+//     images[i].style.display = "none";
+//   }
+//   index++;
+//   if (index > images.length) {
+//     index = 1;
+//   }
+//   images[index-1].style.display = "block";
+//   setTimeout(displayImages, 2000); 
+// }
 
 
-function Slider( element ) {
-	this.el = document.querySelector( element );
-	this.init();
-}	
+// function Slider( element ) {
+// 	this.el = document.querySelector( element );
+// 	this.init();
+// }	
 
 
-/*  NUMBER SLIDER ANIMATED */
-Slider.prototype = {
-	init: function() {
-		this.links = this.el.querySelectorAll( "#slider-nav a" );
-		// this.wrapper = this.el.querySelector( "#slider-wrapper" );
-		this.navigate();
-	},
-	navigate: function() {
+// /*  NUMBER SLIDER ANIMATED */
+// Slider.prototype = {
+// 	init: function() {
+// 		this.links = this.el.querySelectorAll( "#slider-nav a" );
+// 		// this.wrapper = this.el.querySelector( "#slider-wrapper" );
+// 		this.navigate();
+// 	},
+// 	navigate: function() {
 	
-		for( var i = 0; i < this.links.length; ++i ) {
-			var link = this.links[i];
-			this.slide( link );	
-		}
-	},
+// 		for( var i = 0; i < this.links.length; ++i ) {
+// 			var link = this.links[i];
+// 			this.slide( link );	
+// 		}
+// 	},
 	
 	
-	setCurrentLink: function( link ) {
-		var parent = link.parentNode;
-		var a = parent.querySelectorAll( "a" );
+// 	setCurrentLink: function( link ) {
+// 		var parent = link.parentNode;
+// 		var a = parent.querySelectorAll( "a" );
 		
-		link.className = "current";
+// 		link.className = "current";
 		
-		for( var j = 0; j < a.length; ++j ) {
-			var cur = a[j];
-			if( cur !== link ) {
-				cur.className = "";
-			}
-		}
-	}	
-};
+// 		for( var j = 0; j < a.length; ++j ) {
+// 			var cur = a[j];
+// 			if( cur !== link ) {
+// 				cur.className = "";
+// 			}
+// 		}
+// 	}	
+// };
 
-document.addEventListener( "DOMContentLoaded", function() {
-	var aSlider = new Slider( "#slider" );
-});
+// document.addEventListener( "DOMContentLoaded", function() {
+// 	var aSlider = new Slider( "#slider" );
+// });
 
 
-/* =-----------------CART -------------------------*/
-const openBtn = document.getElementById('open_cart_btn')
-const cart = document.getElementById('sidecart')
-const closeBtn = document.getElementById('close_btn')
-const backdrop = document.querySelector('.backdrop')
+// /* =-----------------CART -------------------------*/
+// const openBtn = document.getElementById('open_cart_btn')
+// const cart = document.getElementById('sidecart')
+// const closeBtn = document.getElementById('close_btn')
+// const backdrop = document.querySelector('.backdrop')
 
-openBtn.addEventListener('click', openCart)
-closeBtn.addEventListener('click', closeCart)
-backdrop.addEventListener('click', closeCart)
+// openBtn.addEventListener('click', openCart)
+// closeBtn.addEventListener('click', closeCart)
+// backdrop.addEventListener('click', closeCart)
 
-// Open Cart
-function openCart(){
-	cart.classList.add('open')
-	backdrop.style.display='block'
+// // Open Cart
+// function openCart(){
+// 	cart.classList.add('open')
+// 	backdrop.style.display='block'
 
-	setTimeout(()=>{
-		backdrop.classList.add('show')
-	},0)
+// 	setTimeout(()=>{
+// 		backdrop.classList.add('show')
+// 	},0)
 	
-}
+// }
 
-// Close Cart
-function closeCart(){
-	cart.classList.remove('open')
-	backdrop.classList.remove('show')
+// // Close Cart
+// function closeCart(){
+// 	cart.classList.remove('open')
+// 	backdrop.classList.remove('show')
 	
-	setTimeout(()=>{
-		backdrop.style.display='none'
-	}, 500);
-}
+// 	setTimeout(()=>{
+// 		backdrop.style.display='none'
+// 	}, 500);
+// }

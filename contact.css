@@ -106,7 +106,7 @@ input ,textarea{
 #email_form, #message_form{
     width: 600px ;
 }
-#small_form_area{
+.small_form_area{
     width: 270px ;
 }
 
