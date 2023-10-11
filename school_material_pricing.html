@@ -15,6 +15,7 @@
     <title>School Pricings</title>
   </head>
   <body>
+     <!--Navigation Bar-->
     <nav>
       <!--store name in nav_bar-->
       <h1><a href="./index.html" id="store_name" >Headaway Stationary.</a></h1>
@@ -24,13 +25,17 @@
         <li><a href="./new.html">News</a></li>
         <li><a href="./contact.html">Contact Us</a></li>
       </ol>
-      <!--icons in nav_bar-->
-      <div class="nav_icons">
-        <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-        <a href="#"><i class="fa-solid fa-user fa-xl"></i></a>
+
+ <!--icons in nav_bar-->
+       <div class="nav_icons">
+        <div class="shopping">
+          <button id="open_cart_btn"> 
+           <i class="fa-solid fa-cart-shopping fa-xl" ></i>
+            <span class="quantity">0</span>
+          </button>
       </div>
-    </nav>
-    <section>
+      </nav>
+      <section>
         <h1 id="title_banner">School Supplies</h1>
     </section>
     <!--MATERIAL PRICING-->
@@ -189,5 +194,98 @@
         <p>2511041</p>
       </div>
     </footer>
+        <!-------------------Slider cart----------------->
+          <!--Backdrop-->
+          <div class="backdrop"></div>
+      
+          <!--Side Cart-->
+          <div  id="sidecart" class="sidecart ">
+           <div class="cart_content">
+             <!--Cart Header-->
+             <div class="cart_header">
+               <a href=""><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+               <div class="header_title">
+                 <h2>Your Cart</h2>
+                 <span id="items_num">4</span>
+               </div>
+               <span id="close_btn" class="close_btn">&times;</span>
+             </div>
+             <!--Cart Items-->
+             <div class="cart_items">
+               <!--Iteam 1-->
+               <div class="cart_item">
+                 <div class="remove_item">
+                   <span>&times;</span>
+                 </div>
+                 <div class="item_img">
+                   <img src="./images/watercolors.png" alt="art art_supplies">
+                   <div class="item_details">
+                     <p>Sharpie Highlighters 1</p>
+                     <strong>150LE</strong>
+                     <div class="qty">
+                       <span>-</span>
+                       <strong>1</strong>
+                       <span>+</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+                <!--Iteam 1-->
+                  <!--Iteam 2-->
+               <div class="cart_item">
+                 <div class="remove_item">
+                   <span>&times;</span>
+                 </div>
+                 <div class="item_img">
+                   <img src="./images/watercolors.png" alt="art art_supplies">
+                   <div class="item_details">
+                     <p>Sharpie Highlighters 1</p>
+                     <strong>150LE</strong>
+                     <div class="qty">
+                       <span>-</span>
+                       <strong>1</strong>
+                       <span>+</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+                <!--Iteam 2-->
+                  <!--Iteam 3-->
+               <div class="cart_item">
+                 <div class="remove_item">
+                   <span>&times;</span>
+                 </div>
+                 <div class="item_img">
+                   <img src="./images/watercolors.png" alt="art art_supplies">
+                   <div class="item_details">
+                     <p>Sharpie Highlighters 1</p>
+                     <strong>150LE</strong>
+                     <div class="qty">
+                       <span>-</span>
+                       <strong>1</strong>+
+                       <span>+</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+                <!--Iteam 3-->
+     
+             </div>
+             <!--Cart Actions-->
+             <div class="cart_actions">
+               <div class="subtotal">
+                 <p> SUBTOTAL:</p>
+                 <p> LE <span id="subtotal_price">450</span></p>
+               </div>
+               <button id="black_button">View Cart</button>
+               <button >CHECKOUT</button>
+             </div>
+           </div>
+          </div>
+
+    <!-------------------Script----------------->
+    <script src="./main.js"></script>
+    <script src="./cart.js"></script>
+    <script src="./contact.js"></script>
   </body>
 </html>

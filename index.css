@@ -594,10 +594,10 @@ a:hover{
   width: 400px;
   background-color: #ccc;
   box-shadow: -10px 0 15 var(--light-gray);
-  /* transform: translateX(110%); */
+  transform: translateX(110%);
 
 }
-.sidecart .open{
+.open{
   transform: translateX(0);
 }
 .cart_content{
